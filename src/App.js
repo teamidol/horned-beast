@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import './Header.js';
-import './Footer.js';
-import './Main';
 
-class App extends React.Component {
+
+import Header from './Header.js';
+import Footer from './Footer.js';
+import Main from './Main';
+
+import React, { Component } from 'react'
+
+export default class App extends Component {
   render() {
     return (
-      <>
-        <Header />
-        <Main />
-        <Footer />
-      </>
+      <div>
+        <Header/>
+        <Main/>
+        <Footer/>
+      </div>
     )
   }
 }
 
-
-export default App;
 
 
 
