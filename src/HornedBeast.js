@@ -35,7 +35,7 @@ unfave = () =>{
       <article>
         <h2>{this.props.title}</h2>
         <p>Info: {this.props.description}</p>
-        <img src={this.props.image_url}/>
+        <img alt="a horned beast" src={this.props.image_url}/>
 
         <h2>faves {this.state.faves}</h2>
         {/* <h4 onClick={this.handleFave}>Fave Me!!!</h4> */}
