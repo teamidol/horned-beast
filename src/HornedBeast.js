@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import './HornedBeast.css';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends React.Component {
 
@@ -30,19 +31,32 @@ unfave = () =>{
   })
 }
 
+
+handleNameClick = () => {
+  this.props.handleOpenModal(this.props.title)
+}
+
+
+
+
   render() {
     return (
-      <article>
-        <h2>{this.props.title}</h2>
+      <Card id="cardSection">
+
+        
+        <Card.Title onClick={this.handleNameClick}><h5>{this.props.title}</h5></Card.Title>
+
+
         <p>Info: {this.props.description}</p>
         <img alt="a horned beast" src={this.props.image_url}/>
 
         <h2>faves {this.state.faves}</h2>
+        {console.log(this.props.title)}
         {/* <h4 onClick={this.handleFave}>Fave Me!!!</h4> */}
         <Button onClick={this.handleFave} variant="success">Fave!</Button>
         {/* <Button onClick={this.unfave} variant="danger">clear</Button> */}
         <div>{this.state.faved ? 'I got faved!' : ''}</div>
-      </article>
+      </Card>
     )
   }
 }
