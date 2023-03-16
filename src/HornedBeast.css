@@ -1,25 +1,34 @@
-article {
+.card {
   border: 1px solid gray;
   padding: 1vw;
   margin-bottom: 1vw;
   width: 16%;
 }
-article img {
+.card-img {
   width: 100%
 }
-article p {
-  font-size: 11px;
+.card p {
+  font-size: 20px;
   margin: auto;
   display: inline-block;
   margin-bottom: .5rem;
 }
-article p:last-of-type {
+.card p:last-of-type {
   padding-left: 1rem;
   cursor: pointer;
 }
-article p:last-of-type:hover {
+.card p:last-of-type:hover {
   color: palevioletred;
 }
-.article-button {
+.btn {
   margin: .2rem .1vw;
+}
+
+.card {
+  margin-bottom: 2.5vw;
+}
+
+.card>div {
+  height: 2vw;
+  text-align: center;
 }
