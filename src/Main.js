@@ -1,12 +1,13 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
-// import data from './data/data.json';
+import data from './data/data.json';
 import './Main.css';
 
 class Main extends React.Component {
   render() {
     return (
     <main>
+      {this.props.sortedHorns}
       {this.props.data.map((hornedBeastObj, index) => {
         return (
         <HornedBeast 
