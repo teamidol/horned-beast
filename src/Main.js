@@ -7,6 +7,7 @@ class Main extends React.Component {
   render() {
     return (
     <main>
+      {this.props.sortedHorns}
       {this.props.data.map((hornedBeastObj, index) => {
         return (
         <HornedBeast 
